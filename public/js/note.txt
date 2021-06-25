@@ -1,0 +1,24 @@
+---
+function createSpriteLayer(sprite,pos){
+	return drawSpriteLayer(context){
+		sprite.draw('idle',context,pos.x, pox.y);
+	};
+}
+
+---
+after position
+const spriteLayer = createSpriteLayer(marioSprite,pos);
+comp.layer.push(spriteLayer)
+
+in update
+remove mario.draw
+
+---
+layers.js
+function drawBackground
+export function createBackgroundLayer()
+
+import {createBackgroundLayer} from './layers.js'
+
+---
+change sprite in then to backgroundSprites
