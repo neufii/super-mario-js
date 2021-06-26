@@ -21,9 +21,9 @@ Promise.all([
 
 	level.entities.add(mario);
 
-	const SPACE = 32;
+	const JUMP_KEY = *** ; //keyCode of Spacebar
 	const input  = new Keyboard();
-	input.addMapping(SPACE, keyState => {
+	input.addMapping(JUMP_KEY, keyState => {
 		if (keyState) {
 			mario.jump.start();
 		} else {
